@@ -13,13 +13,12 @@
 
 /**
  * theme.js
- * @package    theme_academi
  * @copyright  2015 onwards LMSACE Dev Team (http://www.lmsace.com)
  * @author    LMSACE Dev Team
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
 
-(function($) {
+define(['jquery'], function($) {
     var img = $("nav#header").find('.avatar').find('img[src$="/u/f2"]');
     var src = img.attr('src');
     img.attr('src', src + "_white");
@@ -48,4 +47,4 @@
         $('.address-head').addClass('empty-address');
     }
 
-})(jQuery);
+});
