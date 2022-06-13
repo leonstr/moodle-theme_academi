@@ -167,6 +167,9 @@ require(['theme_boost/loader', 'theme_boost/drawer'], function(Loader, Drawer) {
     Drawer.init();
     M.util.js_complete('theme_boost/loader');
 });
+require(['jquery', 'theme_boost/bootstrap/carousel'], function($) {
+    $('#home-page-carousel').carousel();
+});
 {{/js}}
 
 {{#js}}
